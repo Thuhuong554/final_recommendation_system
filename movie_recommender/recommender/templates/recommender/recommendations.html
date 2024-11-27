@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+</head>
+<body>
+    <h1>Movie Recommendations</h1>
+
+{% if recommendations %}
+    <ul>
+        {% for recommendation in recommendations %}
+            <li>
+                <strong>Antecedents:</strong> {{ recommendation.antecedents }}<br>
+                <strong>Consequents:</strong> {{ recommendation.consequents }}<br>
+                <strong>Lift:</strong> {{ recommendation.lift }}
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No recommendations available.</p>
+{% endif %}
+
+</body>
+</html>
