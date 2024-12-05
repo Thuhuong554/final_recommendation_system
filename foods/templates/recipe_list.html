@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Recipes{% endblock %}
+
+{% block content %}
+<div class="recipe-list-container">
+    <h2>Recipes Collection</h2>
+    <div class="recipe-list">
+        {% for recipe in page_obj %}
+        <div class="recipe-item">
+            <div class="recipe-card">
+                <img src="{% static 'images/placeholder.jpg' %}" alt="Recipe Image">
+                <div class="recipe-details">
+                    <h3>{{ recipe.food_name }}</h3>
+                    <p>{{ recipe.content|truncatewords:20 }}</p>
+                    <a href="#">Read Full Recipe</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+        {% endif %}
+        <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Next</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

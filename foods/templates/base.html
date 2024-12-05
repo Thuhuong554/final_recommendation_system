@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %}Food Calorie Finder{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    </head>
+    
+<body>
+    <header>
+        <div class="navbar">
+            <h1><a href="{% url 'homepage' %}">FOODIEE</a></h1>
+            <nav>
+                <a href="{% url 'food_list' %}">Food & Calories</a>
+                <a href="{% url 'recipe_list' %}">Recipe</a>
+                <a href="{% url 'recommendation' %}">Our Recommendation</a>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search..." />
+                <button>🔍</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>© 2024 Foodiee. All Rights Reserved.</p>
+    </footer>
+    <script src="{% static 'scripts/scripts.js' %}"></script>
+
+</body>
+</html>

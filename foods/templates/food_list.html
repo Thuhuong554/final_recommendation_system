@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Food List{% endblock %}
+
+{% block content %}
+<div class="food-list-container">
+    <h2>Explore Our Food List</h2>
+    <div class="food-list">
+        {% for food in page_obj %}
+        <div class="food-item">
+            <div class="food-card">
+                <img src="{{ food.image_url|default:'{% static "images/placeholder.jpg" %}' }}" alt="{{ food.name }}">
+                <div class="food-details">
+                    <h3>{{ food.name }}</h3>
+                    <p>Calories: <strong>{{ food.calories }}</strong></p>
+                    <p>Diet Type: <strong>{{ food.get_diet_type_display }}</strong></p>
+                    <p>Recipe: <a href="{% url 'recipe_list_with_food' food.id %}">View Recipe</a></p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}">Previous</a>
+        {% endif %}
+        <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
+        {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}">Next</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

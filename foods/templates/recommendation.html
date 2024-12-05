@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+<div class="recommendation-container">
+    <h1 class="title">BUILD YOUR PLAN FREE</h1>
+
+    <!-- Form Section -->
+    <form method="GET" action="{% url 'recommendation' %}" class="recommendation-form">
+        <div class="form-grid">
+            <!-- Goal -->
+            <div class="form-group">
+                <label>Your Goal:</label>
+                <div class="form-options">
+                    <label><input type="radio" name="goal" value="gain" {% if user_inputs.goal == "gain" %}checked{% endif %}> Gain weight</label>
+                    <label><input type="radio" name="goal" value="maintain" {% if user_inputs.goal == "maintain" %}checked{% endif %}> Maintain</label>
+                    <label><input type="radio" name="goal" value="lose" {% if user_inputs.goal == "lose" %}checked{% endif %}> Lose weight</label>
+                </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <select name="gender">
+                    <option value="male" {% if user_inputs.gender == "male" %}selected{% endif %}>Male</option>
+                    <option value="female" {% if user_inputs.gender == "female" %}selected{% endif %}>Female</option>
+                </select>
+            </div>
+
+            <!-- Height -->
+            <div class="form-group">
+                <label>Height:</label>
+                <input type="number" name="height" placeholder="Ex: 160cm" value="{{ user_inputs.height }}">
+            </div>
+
+            <!-- Weight -->
+            <div class="form-group">
+                <label>Weight:</label>
+                <input type="number" name="weight" placeholder="Ex: 60kg" value="{{ user_inputs.weight }}">
+            </div>
+
+            <!-- Activity Level -->
+            <div class="form-group">
+                <label>Physical Activity Intensity:</label>
+                <select name="activity">
+                    <option value="sedentary" {% if user_inputs.activity == "sedentary" %}selected{% endif %}>Sedentary lifestyle (little/no exercise)</option>
+                    <option value="light" {% if user_inputs.activity == "light" %}selected{% endif %}>Light exercise</option>
+                    <option value="moderate" {% if user_inputs.activity == "moderate" %}selected{% endif %}>Moderate exercise</option>
+                    <option value="active" {% if user_inputs.activity == "active" %}selected{% endif %}>Active lifestyle</option>
+                </select>
+            </div>
+
+            <!-- Diet Preferences -->
+            <div class="form-group">
+                <label>Preferred Diet:</label>
+                <div class="form-options">
+                    <label><input type="checkbox" name="diet" value="eat_clean" {% if "eat_clean" in user_inputs.diet %}checked{% endif %}> Eat clean</label>
+                    <label><input type="checkbox" name="diet" value="keto" {% if "keto" in user_inputs.diet %}checked{% endif %}> Keto</label>
+                    <label><input type="checkbox" name="diet" value="vegan" {% if "vegan" in user_inputs.diet %}checked{% endif %}> Vegan</label>
+                    <label><input type="checkbox" name="diet" value="low_carb" {% if "low_carb" in user_inputs.diet %}checked{% endif %}> Low carbs</label>
+                </div>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Recommend Food</button>
+    </form>
+
+    <!-- Results Section -->
+    <div class="results-section">
+        {% if calorie_needs %}
+        <div class="calorie-summary">
+            <h3>Your BMR: {{ calorie_needs }} kcal</h3>
+        </div>
+        {% endif %}
+
+        {% if recommendations %}
+        <h3>Recommended Foods:</h3>
+        <div class="food-list">
+            {% for food in recommendations %}
+            <div class="food-item">
+                <img src="{% static 'images/placeholder.jpg' %}" alt="Food Image">
+                <h4>{{ food.name }}</h4>
+                <p>Calories: {{ food.calories }}</p>
+                <p>Recipe: {{ food.recipe|truncatewords:15 }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p>No recommendations yet. Please fill out the form to get suggestions.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
