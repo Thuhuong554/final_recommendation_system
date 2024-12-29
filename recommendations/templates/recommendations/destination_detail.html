@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ destination.name }} - TravelRec{% endblock %}
+
+{% block content %}
+<div class="min-h-screen bg-gray-50 py-8">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Destination Header -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+            <div class="relative h-96">
+                {% if destination.image_url %}
+                    <img src="{{ destination.image_url }}" alt="{{ destination.name }}" class="w-full h-full object-cover">
+                {% else %}
+                    <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                        <span class="text-gray-400">No image available</span>
+                    </div>
+                {% endif %}
+            </div>
+            
+            <div class="p-6">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">{{ destination.name }}</h1>
+                        <p class="text-lg text-gray-600">{{ destination.location }}</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="text-right">
+                            <div class="text-2xl font-bold text-indigo-600">{{ destination.rating|floatformat:1 }}</div>
+                            <div class="text-sm text-gray-500">Average Rating</div>
+                        </div>
+                        <button 
+                            hx-post="{% url 'recommendations:toggle_bookmark' destination.id %}"
+                            hx-swap="outerHTML"
+                            class="p-2 rounded-full hover:bg-gray-100"
+                        >
+                            <svg class="w-6 h-6 {% if is_bookmarked %}text-yellow-400{% else %}text-gray-400{% endif %}" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-wrap gap-2">
+                    {% for category in destination.categories.all %}
+                        <span class="px-3 py-1 rounded-full text-sm bg-indigo-100 text-indigo-800">
+                            {{ category.name }}
+                        </span>
+                    {% endfor %}
+                </div>
+
+                <p class="mt-4 text-gray-700">{{ destination.description }}</p>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Reviews</h2>
+                    
+                    {% if user.is_authenticated %}
+                        {% if not user_review %}
+                            <div class="mb-8">
+                                <h3 class="text-lg font-semibold text-gray-900 mb-4">Write a Review</h3>
+                                <form method="post" action="{% url 'recommendations:add_review' destination.id %}">
+                                    {% csrf_token %}
+                                    {{ form|crispy }}
+                                    <button type="submit" class="mt-4 w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
+                                        Submit Review
+                                    </button>
+                                </form>
+                            </div>
+                        {% else %}
+                            <div class="mb-8 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="font-semibold text-gray-900">Your Review</h3>
+                                        <div class="text-yellow-400">
+                                            {% for i in "12345"|make_list %}
+                                                {% if forloop.counter <= user_review.rating %}
+                                                    ★
+                                                {% else %}
+                                                    ☆
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    <a href="{% url 'recommendations:add_review' destination.id %}" 
+                                       class="text-sm text-indigo-600 hover:text-indigo-800">
+                                        Edit Review
+                                    </a>
+                                </div>
+                                <p class="text-gray-700">{{ user_review.review }}</p>
+                            </div>
+                        {% endif %}
+                    {% endif %}
+
+                    <!-- Other Reviews -->
+                    <div class="space-y-6">
+                        {% for review in reviews %}
+                            {% if review.user != user %}
+                                <div class="border-b border-gray-200 pb-6 last:border-0">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <div>
+                                            <div class="font-medium text-gray-900">{{ review.user.username }}</div>
+                                            <div class="text-yellow-400">
+                                                {% for i in "12345"|make_list %}
+                                                    {% if forloop.counter <= review.rating %}
+                                                        ★
+                                                    {% else %}
+                                                        ☆
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                        <div class="text-sm text-gray-500">
+                                            {{ review.interaction_timestamp|date:"M d, Y" }}
+                                        </div>
+                                    </div>
+                                    <p class="text-gray-700">{{ review.review }}</p>
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Similar Destinations -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-4">Similar Destinations</h2>
+                    <div class="space-y-4">
+                        {% for similar in similar_destinations %}
+                            <a href="{% url 'recommendations:destination_detail' similar.id %}" 
+                               class="block hover:bg-gray-50 rounded-lg p-4 transition">
+                                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden mb-2">
+                                    {% if similar.image_url %}
+                                        <img src="{{ similar.image_url }}" alt="{{ similar.name }}" 
+                                             class="w-full h-full object-cover">
+                                    {% else %}
+                                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                                            <span class="text-gray-400">No image</span>
+                                        </div>
+                                    {% endif %}
+                                </div>
+                                <h3 class="font-semibold text-gray-900">{{ similar.name }}</h3>
+                                <p class="text-sm text-gray-600">{{ similar.location }}</p>
+                                <div class="mt-1 text-sm text-yellow-400">
+                                    {{ similar.rating|floatformat:1 }} ★
+                                </div>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

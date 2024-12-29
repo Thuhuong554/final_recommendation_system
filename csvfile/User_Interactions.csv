@@ -1,0 +1,501 @@
+User ID,Destination Name,Review,Rating,Interaction Timestamp
+User_23,White Falls,Family-friendly and enjoyable for all ages.,2.3,2023-06-12 19:20:44
+User_21,Can Tho Bridge,"The view was breathtaking, loved it.",2.8,2023-05-09 11:50:24
+User_75,Ba Na Hills,"Not as expected, quite crowded.",4.5,2023-03-04 15:45:04
+User_37,Ancient Mango Tree,Beautiful scenery and very peaceful.,3.2,2022-08-05 09:21:43
+User_90,Bac Lieu Beach,"The service was excellent, will visit again.",3.3,2023-03-17 17:06:36
+User_77,Lai Chau Hydroelectric Lake,"Good, but could be better maintained.",4.3,2022-08-21 08:50:57
+User_10,Suoi Oh,Too expensive for what it offers.,1.4,2023-12-17 16:50:19
+User_87,Hundred Pillar Ancient House,"The view was breathtaking, loved it.",2.9,2023-02-27 10:44:32
+User_15,Minh Thanh Pagoda,"Highly overrated, not worth the hype.",4.5,2024-10-20 23:28:26
+User_21,Pu Luong terraced fields,"Rich in history and culture, a must-visit.",4.4,2023-04-21 12:55:28
+User_59,Truong Bon relic site,Beautiful scenery and very peaceful.,1.8,2022-06-05 08:51:02
+User_30,Khuoi Nhi Waterfall,Beautiful scenery and very peaceful.,3.5,2023-09-12 14:12:27
+User_29,Tra Su Melaleuca Forest,Too expensive for what it offers.,4.3,2022-03-02 11:27:43
+User_48,Tonle Sap Lake,"Highly overrated, not worth the hype.",2.5,2024-08-23 13:40:12
+User_70,Van Thanh Temple,"The view was breathtaking, loved it.",2.9,2024-01-10 08:22:19
+User_13,Buu Long tourist area,"Good, but could be better maintained.",2.6,2023-09-10 03:51:43
+User_55,Ao Ba braised,"Rich in history and culture, a must-visit.",3.5,2023-11-23 09:45:37
+User_90,Roman Church,"The service was excellent, will visit again.",1.8,2022-04-13 23:24:34
+User_80,Huu Nghi border gate,Family-friendly and enjoyable for all ages.,3.5,2024-03-20 08:26:33
+User_30,Suoi Hieu,"The view was breathtaking, loved it.",3.7,2023-07-07 21:54:17
+User_86,Ho Chi Minh Mausoleum,"Rich in history and culture, a must-visit.",3.9,2024-11-08 00:58:11
+User_97,Temple of Lady Kho,"The service was excellent, will visit again.",1.6,2022-09-01 09:26:40
+User_88,Chu Mom Ray National Park,"Rich in history and culture, a must-visit.",4,2023-09-05 16:58:30
+User_44,Mai Chau,"The view was breathtaking, loved it.",1.6,2024-07-27 03:08:38
+User_38,Tan Long stork garden,"Rich in history and culture, a must-visit.",4.6,2022-02-25 12:03:34
+User_70,Cat King's Palace,"Not as expected, quite crowded.",4.6,2024-08-01 02:38:32
+User_8,Nui Chua National Park,"Good, but could be better maintained.",4.1,2024-01-04 02:12:54
+User_79,My Son Sanctuary,Family-friendly and enjoyable for all ages.,1.5,2023-06-08 12:37:25
+User_25,Mui Nai Beach,"Not as expected, quite crowded.",3.8,2024-06-24 17:32:30
+User_69,Ho Soai So,Family-friendly and enjoyable for all ages.,2.6,2024-07-21 07:04:17
+User_79,Thum Thum Waterfall,"A hidden gem, truly spectacular.",1.9,2023-06-14 00:59:20
+User_17,Trung Temple,"Highly overrated, not worth the hype.",4.2,2022-10-03 08:53:40
+User_7,Ba Be Lake,Family-friendly and enjoyable for all ages.,1.6,2022-04-15 02:27:25
+User_94,Ngang Pass,"A hidden gem, truly spectacular.",3.5,2024-08-21 20:45:54
+User_41,U Minh Ha National Park,"Rich in history and culture, a must-visit.",2.4,2023-01-28 10:01:50
+User_86,Dien Bien Phu Victory Monument,Family-friendly and enjoyable for all ages.,3.6,2023-09-22 17:03:46
+User_84,Nguyen Dinh Chieu's mausoleum area,"A hidden gem, truly spectacular.",1.2,2022-03-19 22:25:03
+User_6,Dray Sap Waterfall,"Good, but could be better maintained.",2.3,2024-10-17 01:08:30
+User_19,Silver Stone Cave,"Rich in history and culture, a must-visit.",3.0,2022-07-16 10:13:53
+User_20,Vinh Hy Bay,Too expensive for what it offers.,2.9,2022-03-28 21:07:30
+User_99,Dai Lanh lighthouse,"A hidden gem, truly spectacular.",4.5,2024-10-12 22:49:33
+User_97,Dray Nur Waterfall,"The view was breathtaking, loved it.",2.6,2023-07-11 05:33:45
+User_15,Bao Dai Palace,"The view was breathtaking, loved it.",3.4,2024-11-13 16:27:57
+User_95,Tran Temple,"Not as expected, quite crowded.",4.2,2022-10-21 16:29:21
+User_85,Ninh Thuan vineyard,Perfect for a weekend getaway!,2.7,2024-11-19 23:55:11
+User_13,Phu Cuong Waterfall,"A hidden gem, truly spectacular.",3.3,2022-06-17 21:28:06
+User_41,Nui Coc Lake,Perfect for a weekend getaway!,1.7,2022-01-11 23:31:39
+User_52,Ho Khuon Than,"Good, but could be better maintained.",3.9,2024-09-09 13:57:12
+User_24,Dong Ngo Quyen Market,Perfect for a weekend getaway!,4.6,2024-05-03 17:48:58
+User_98,Sa Dec flower village,"An average experience, needs improvement.",2.5,2023-03-25 23:01:36
+User_77,Pho Hien,"Good, but could be better maintained.",2.7,2024-09-10 22:50:45
+User_37,Long Thuong bronze casting village,Too expensive for what it offers.,1.3,2023-09-18 14:13:45
+User_85,Chau Thoi Pagoda,Too expensive for what it offers.,2.5,2023-12-04 16:53:22
+User_5,Tan Lap floating village,"Highly overrated, not worth the hype.",1.4,2022-02-23 06:28:07
+User_66,Bai Chay Beach,"Rich in history and culture, a must-visit.",3.7,2022-10-10 14:50:19
+User_97,Dray Sap Waterfall,"Good, but could be better maintained.",3.7,2023-11-08 02:24:36
+User_18,Ho Soai So,Perfect for a weekend getaway!,2.8,2022-03-10 11:24:01
+User_18,Thum Thum Waterfall,"An average experience, needs improvement.",4.7,2023-09-28 13:43:23
+User_73,Xuan Thuy National Park,"An average experience, needs improvement.",2.9,2022-05-23 11:27:26
+User_40,Cat Ba,"Rich in history and culture, a must-visit.",3.5,2023-06-14 02:59:04
+User_85,Tonle Sap Lake,"The service was excellent, will visit again.",4.7,2022-06-05 15:06:53
+User_19,Hill A1,"A hidden gem, truly spectacular.",3.2,2024-12-19 07:01:15
+User_70,O Quy Ho Pass,Family-friendly and enjoyable for all ages.,2.4,2023-12-12 09:46:42
+User_20,Vinpearl Hau Giang amusement park,"Rich in history and culture, a must-visit.",2.7,2022-05-12 18:30:25
+User_22,Tan Thanh Beach,"An average experience, needs improvement.",3.2,2022-06-25 19:20:56
+User_59,Cinnamon Peak,"The view was breathtaking, loved it.",1.1,2022-11-18 20:08:44
+User_48,Sister Su's grave,Beautiful scenery and very peaceful.,2.5,2023-03-10 04:29:40
+User_65,Dai Lanh lighthouse,"The service was excellent, will visit again.",1.8,2022-06-03 11:59:48
+User_60,Cu Vo Peak,"The view was breathtaking, loved it.",1.3,2023-02-28 06:11:37
+User_92,Cua Tung Beach,"Good, but could be better maintained.",2.5,2023-02-27 18:05:10
+User_18,Thuong Temple,"An average experience, needs improvement.",1.4,2023-12-06 11:37:51
+User_37,Khuoi Nhi Waterfall,"Rich in history and culture, a must-visit.",3.9,2022-08-27 22:19:35
+User_89,Sin Ho market,Beautiful scenery and very peaceful.,2.0,2024-02-27 10:37:55
+User_39,But Thap Pagoda,"The service was excellent, will visit again.",1.6,2022-05-13 07:23:58
+User_24,Lau Pagoda,Too expensive for what it offers.,4.2,2022-01-16 16:04:10
+User_91,Dien Bien Phu Victory Monument,"An average experience, needs improvement.",3.4,2022-07-13 09:23:05
+User_77,Dak To Waterfall,"Not as expected, quite crowded.",3.0,2022-04-21 01:58:52
+User_56,Dong Kinh Market,"Good, but could be better maintained.",2.9,2024-05-09 20:24:49
+User_43,World Coffee Museum,"Highly overrated, not worth the hype.",3.1,2022-07-01 08:11:18
+User_17,Vinh Moc Tunnels,Beautiful scenery and very peaceful.,1.4,2022-09-27 13:11:24
+User_58,Bao Dai Palace,"Not as expected, quite crowded.",4.2,2022-08-22 10:04:40
+User_71,Tan Thanh Beach,"An average experience, needs improvement.",1.5,2022-09-15 01:24:05
+User_38,Hon Dau Lighthouse,"A hidden gem, truly spectacular.",1.8,2023-06-09 15:35:05
+User_46,Dong Chau Beach,Perfect for a weekend getaway!,1.1,2024-04-23 09:55:29
+User_98,Binh Phuoc cashew craft village,"Not as expected, quite crowded.",2.3,2022-10-23 18:47:29
+User_79,Linh Son Cave,"Highly overrated, not worth the hype.",2.2,2024-12-22 00:02:35
+User_6,Dong Chau Beach,"Good, but could be better maintained.",3.2,2024-02-25 04:42:57
+User_67,Ba Na Hills,"Highly overrated, not worth the hype.",3.5,2024-07-15 00:36:02
+User_59,Nui Chua National Park,Perfect for a weekend getaway!,4.8,2024-11-01 07:48:47
+User_38,Dam Vac eco-tourism area,"Highly overrated, not worth the hype.",1.2,2022-09-21 12:16:35
+User_34,Trang Tien Bridge,"The view was breathtaking, loved it.",3.6,2023-05-07 02:27:16
+User_33,Lung Ngoc Hoang tourist area,Too expensive for what it offers.,3.4,2024-12-01 15:21:22
+User_69,Ninh Hiep Market,"A hidden gem, truly spectacular.",2.1,2022-01-26 08:39:35
+User_65,VinWonders Nha Trang,"Not as expected, quite crowded.",1.4,2023-02-24 13:52:24
+User_78,Ao Ba braised,Too expensive for what it offers.,4.9,2023-03-21 09:51:29
+User_90,Nguyen Dinh Chieu's mausoleum area,Perfect for a weekend getaway!,1.5,2023-10-11 10:29:07
+User_91,Cu Chi Tunnels,"Highly overrated, not worth the hype.",4.3,2022-01-11 01:34:26
+User_41,World Coffee Museum,"Not as expected, quite crowded.",1.5,2022-06-23 05:25:04
+User_92,Back Beach,Too expensive for what it offers.,1.1,2022-02-19 16:30:36
+User_47,Tan Cuong tea hill,"Rich in history and culture, a must-visit.",2.9,2024-11-09 12:28:47
+User_96,Cat King's Palace,"An average experience, needs improvement.",4.4,2023-11-13 07:18:45
+User_28,Som Rong Pagoda,"Good, but could be better maintained.",4.2,2022-07-25 12:42:21
+User_72,Memorial house of General Vo Nguyen Giap,Perfect for a weekend getaway!,4.2,2023-11-07 04:10:05
+User_27,Dong Loc intersection,"An average experience, needs improvement.",2.3,2023-07-04 10:51:58
+User_99,Nga Nam floating market,Perfect for a weekend getaway!,4.1,2024-12-16 08:34:54
+User_14,VinWonders Nha Trang,Family-friendly and enjoyable for all ages.,3.2,2023-12-09 04:09:05
+User_22,Bac Trach Church,"The view was breathtaking, loved it.",2.0,2022-04-02 19:11:43
+User_83,Chu Mom Ray National Park,Perfect for a weekend getaway!,2.0,2023-05-28 13:10:21
+User_35,Buon Don,Family-friendly and enjoyable for all ages.,4.2,2022-07-22 19:59:18
+User_75,Qinghai Water Puppet Village,Beautiful scenery and very peaceful.,4.0,2023-11-26 07:27:50
+User_78,Trung Temple,"Not as expected, quite crowded.",3.2,2023-08-08 23:34:50
+User_22,Minh Thanh Pagoda,"The service was excellent, will visit again.",2.1,2024-04-12 03:51:56
+User_96,Do Son,Family-friendly and enjoyable for all ages.,1.2,2022-11-27 16:04:13
+User_58,Ton Thanh Pagoda,"The view was breathtaking, loved it.",3.8,2022-11-17 09:54:26
+User_96,Uncle Ho Temple,"An average experience, needs improvement.",3.5,2022-07-19 21:29:52
+User_67,Hung Lo ancient village,"Good, but could be better maintained.",4.8,2024-02-07 04:01:43
+User_15,Tam Chuc Pagoda,"Rich in history and culture, a must-visit.",4.9,2024-03-19 19:57:41
+User_100,Qinghai Water Puppet Village,"Good, but could be better maintained.",1.1,2023-02-26 07:18:26
+User_90,Suoi Hieu,Beautiful scenery and very peaceful.,2.7,2024-03-24 17:01:07
+User_42,Lang Cat Pagoda,Beautiful scenery and very peaceful.,2.5,2023-06-19 18:54:29
+User_13,Luon Cave,"Not as expected, quite crowded.",1.9,2022-10-28 19:15:16
+User_97,O Quy Ho Pass,Beautiful scenery and very peaceful.,2.1,2023-09-12 18:34:33
+User_48,Dray Sap Waterfall,"The service was excellent, will visit again.",2.9,2023-07-20 10:15:50
+User_45,Cai Lon River,"A hidden gem, truly spectacular.",3.1,2023-05-05 12:18:06
+User_65,Tan Thanh Beach,Too expensive for what it offers.,4.9,2024-08-03 00:23:03
+User_24,Cu Lao Xanh,Too expensive for what it offers.,1.5,2022-09-16 06:33:53
+User_3,Xuan Huong Lake,"Good, but could be better maintained.",1.3,2023-11-14 04:32:27
+User_55,Phu Cuong Waterfall,"The service was excellent, will visit again.",4.4,2024-06-03 05:05:35
+User_97,Kiep Bac Temple,Perfect for a weekend getaway!,2.2,2022-06-03 21:09:36
+User_35,Pu Luong terraced fields,Family-friendly and enjoyable for all ages.,4.3,2022-11-17 17:31:17
+User_75,Thien Cung Cave,Too expensive for what it offers.,2.0,2022-07-21 22:19:39
+User_58,Tran Hung Dao forest relic,Too expensive for what it offers.,4.7,2024-02-01 02:48:46
+User_34,Thac Bo Temple,Beautiful scenery and very peaceful.,3.4,2022-07-26 14:09:40
+User_29,Ea Sno Lake,Beautiful scenery and very peaceful.,3.1,2024-07-24 09:34:53
+User_46,Tu San Alley,"Not as expected, quite crowded.",4.0,2024-05-16 11:48:22
+User_11,Bridge of Love,"The view was breathtaking, loved it.",1.2,2024-10-07 17:42:34
+User_62,Thuong Temple,"Not as expected, quite crowded.",3.0,2022-04-05 14:30:50
+User_24,Bac Lieu Beach,"A hidden gem, truly spectacular.",4.9,2023-06-23 01:15:55
+User_73,Nguyen Du relic site,"The service was excellent, will visit again.",2.8,2022-07-10 00:14:08
+User_26,Buu Long tourist area,Perfect for a weekend getaway!,1.4,2023-12-05 07:29:58
+User_23,Thac Bo Temple,Family-friendly and enjoyable for all ages.,3.5,2022-01-20 21:34:52
+User_15,Dam Vac eco-tourism area,"Not as expected, quite crowded.",2.2,2022-02-20 16:09:02
+User_90,Ba Be Lake,"The view was breathtaking, loved it.",2.6,2022-11-17 18:17:49
+User_14,Cat Tien National Park,Family-friendly and enjoyable for all ages.,2.8,2022-12-04 22:33:03
+User_84,Nguyen Dinh Chieu's mausoleum area,"Rich in history and culture, a must-visit.",3.3,2023-07-05 23:09:56
+User_73,Hoi mat weaving village,Family-friendly and enjoyable for all ages.,2.4,2022-05-12 23:20:48
+User_29,Moc Chau,Family-friendly and enjoyable for all ages.,2.1,2022-04-11 06:55:11
+User_87,Khuoi Nhi Waterfall,Too expensive for what it offers.,3.8,2024-05-09 09:47:21
+User_89,Xeo Quyt relic site,"Not as expected, quite crowded.",4.7,2023-04-13 12:30:22
+User_30,Lanh Giang Temple,"The service was excellent, will visit again.",1.9,2023-03-09 12:23:57
+User_41,Ho Dai Lai,"An average experience, needs improvement.",4.9,2023-07-14 12:34:25
+User_87,Nga Bay floating market,"Not as expected, quite crowded.",3.9,2022-08-14 04:59:37
+User_48,Truc Lam Zen Monastery,Too expensive for what it offers.,3.5,2022-01-04 21:11:11
+User_80,Puong Cave,"Not as expected, quite crowded.",1.9,2024-07-14 11:23:48
+User_23,Phu Quoc Island,"Highly overrated, not worth the hype.",4.6,2024-06-11 17:31:32
+User_50,Temple of Holy Mother Lieu Hanh,Too expensive for what it offers.,2.1,2022-01-01 13:17:05
+User_11,Phu Ung Temple,"The service was excellent, will visit again.",3.3,2023-12-23 16:13:54
+User_40,Xuan Thuy National Park,"The service was excellent, will visit again.",2.8,2023-06-13 05:42:18
+User_72,Vietnam History Museum,"Highly overrated, not worth the hype.",1.7,2023-06-28 00:32:27
+User_84,Moc Chau,"A hidden gem, truly spectacular.",1.9,2022-11-07 09:42:10
+User_10,Pho Hien,Family-friendly and enjoyable for all ages.,2.9,2022-04-03 19:21:53
+User_27,Tan Long stork garden,"A hidden gem, truly spectacular.",4.7,2024-11-26 15:35:17
+User_1,Dien Bien Phu Victory Museum,Family-friendly and enjoyable for all ages.,3.2,2023-07-04 16:59:40
+User_40,Dray Nur Waterfall,"A hidden gem, truly spectacular.",4.8,2023-07-22 05:38:25
+User_22,Doc Lap Palace,"Rich in history and culture, a must-visit.",4.7,2022-03-11 00:20:27
+User_23,Ninh Thuan vineyard,"An average experience, needs improvement.",1.7,2023-06-22 19:13:23
+User_80,Dong Ho painting village,"Highly overrated, not worth the hype.",4.6,2022-03-05 07:56:09
+User_72,Chu Bluk Cave,"The service was excellent, will visit again.",4.5,2022-03-10 14:00:47
+User_53,Ponagar Tower,Beautiful scenery and very peaceful.,4.0,2022-08-03 18:58:07
+User_8,Thien Cam Beach,"Good, but could be better maintained.",3.6,2022-05-24 16:49:41
+User_1,Dak To Waterfall,"Good, but could be better maintained.",3.9,2022-12-16 22:22:32
+User_50,Vien Thao Mien flower hill,"The service was excellent, will visit again.",2.6,2022-08-03 05:04:03
+User_7,Ngang Pass,Beautiful scenery and very peaceful.,5.0,2022-04-14 16:22:31
+User_58,Binh Duong New City Park,"The service was excellent, will visit again.",4.1,2022-09-20 07:44:53
+User_12,Hue Citadel,"Good, but could be better maintained.",4.8,2023-03-16 10:56:18
+User_32,Vu Dai Village,Too expensive for what it offers.,4.4,2023-12-04 19:17:50
+User_27,Huong Canh Pottery Village,"Rich in history and culture, a must-visit.",4.0,2022-02-11 06:32:20
+User_2,Lake Be Beach,"Good, but could be better maintained.",2.0,2024-09-15 17:15:11
+User_87,Thung Nai,Beautiful scenery and very peaceful.,1.7,2022-07-23 19:25:50
+User_68,Ma Pi Leng Pass,"A hidden gem, truly spectacular.",4.4,2024-02-22 07:56:25
+User_33,Tibetan Temple,"Rich in history and culture, a must-visit.",3.8,2023-12-04 05:43:07
+User_30,Ba Na Hills,"Rich in history and culture, a must-visit.",2.7,2023-09-28 09:27:10
+User_26,Xuan Son National Park,"An average experience, needs improvement.",3.9,2024-10-28 07:53:12
+User_37,Ong De Ecotourism Village,"Highly overrated, not worth the hype.",4.7,2023-06-16 21:04:00
+User_44,Hoang Van Thu Bridge,Family-friendly and enjoyable for all ages.,4.0,2024-07-02 05:37:42
+User_38,Giang Dien Waterfall,"An average experience, needs improvement.",2.0,2022-09-06 01:16:39
+User_37,Hon Dau Lighthouse,Perfect for a weekend getaway!,4.2,2024-02-11 23:21:53
+User_60,Dong Loc intersection,Perfect for a weekend getaway!,4.7,2023-03-06 03:47:28
+User_87,Sister Su's grave,Too expensive for what it offers.,1.0,2023-01-16 03:34:46
+User_54,Nguyen Dinh Chieu's mausoleum area,Too expensive for what it offers.,2.7,2022-02-14 05:34:21
+User_72,Bac Ha market,"The service was excellent, will visit again.",1.5,2023-06-04 05:11:03
+User_14,Xeo Quyt relic site,"The service was excellent, will visit again.",3.7,2023-11-15 21:40:55
+User_31,Ha Long Bay,"The service was excellent, will visit again.",2.8,2022-08-26 20:33:20
+User_76,Ho Mai Mieu,"Highly overrated, not worth the hype.",1.5,2024-02-14 04:40:37
+User_32,Con Dao Vung Tau,"A hidden gem, truly spectacular.",1.7,2023-10-08 22:03:29
+User_8,Dien Bien Phu Victory Museum,"A hidden gem, truly spectacular.",4.1,2023-08-02 14:56:38
+User_27,Suoi Hieu,"The view was breathtaking, loved it.",3.0,2022-12-11 00:03:52
+User_34,Dam Vac eco-tourism area,"The view was breathtaking, loved it.",4.7,2022-01-24 02:47:49
+User_54,Khuoi Nhi Waterfall,Perfect for a weekend getaway!,2.0,2023-01-23 18:31:59
+User_38,Bitter Dat Waterfall,Perfect for a weekend getaway!,3.1,2024-06-17 07:47:55
+User_22,Hon Kho,"Rich in history and culture, a must-visit.",3.5,2022-07-28 19:38:39
+User_91,Hon Rom,Perfect for a weekend getaway!,4.7,2023-09-28 15:27:48
+User_81,Tam Coc,"Rich in history and culture, a must-visit.",3.9,2024-10-02 13:59:28
+User_75,Temple of Literature - National Tu Giam,"Not as expected, quite crowded.",2.4,2023-07-07 20:15:22
+User_57,Vinh Sang tourist area,"The service was excellent, will visit again.",3.3,2022-11-16 17:54:25
+User_26,Linh Vu Pagoda,Family-friendly and enjoyable for all ages.,4.9,2022-05-07 05:43:46
+User_17,Ba Ho Stream,"The service was excellent, will visit again.",2.2,2024-06-06 01:30:32
+User_29,Ong Pagoda,Too expensive for what it offers.,1.1,2024-01-19 14:33:16
+User_96,Memorial house of General Vo Nguyen Giap,Too expensive for what it offers.,3.4,2023-06-18 04:51:13
+User_39,Ho Vi Xuyen,Beautiful scenery and very peaceful.,4.3,2024-11-27 20:04:39
+User_86,Khmer Cultural Museum,Perfect for a weekend getaway!,2.5,2022-02-27 06:01:51
+User_16,Tan Lap floating village,"The view was breathtaking, loved it.",3.7,2024-04-02 10:15:19
+User_10,Bo Da ancient pagoda,"The service was excellent, will visit again.",1.2,2022-09-04 19:58:25
+User_31,Cat Ba,"An average experience, needs improvement.",2.3,2023-01-07 02:43:28
+User_98,Sister Su's grave,Too expensive for what it offers.,1.9,2023-08-17 09:45:34
+User_74,Thuong Temple,"Highly overrated, not worth the hype.",1.9,2022-05-04 04:48:22
+User_82,Nguyen Dinh Chieu's mausoleum area,Family-friendly and enjoyable for all ages.,1.1,2024-01-22 05:19:32
+User_25,Ho Tram,"An average experience, needs improvement.",1.9,2024-06-05 09:33:39
+User_51,Bridge of Love,"Rich in history and culture, a must-visit.",1.8,2024-10-18 06:05:09
+User_87,Ponagar Tower,"A hidden gem, truly spectacular.",3.5,2023-09-12 02:16:06
+User_50,Nhan Tower,"Good, but could be better maintained.",2.4,2022-05-21 01:50:21
+User_4,Vinh Sang tourist area,"Good, but could be better maintained.",3.4,2024-05-20 06:43:49
+User_62,My Thuan Bridge,"The view was breathtaking, loved it.",5.0,2024-03-10 06:43:55
+User_75,Buu Long tourist area,"The service was excellent, will visit again.",2.0,2024-06-05 14:21:13
+User_33,Tam Coc,"The view was breathtaking, loved it.",4.7,2022-03-24 04:52:05
+User_92,Pu Ta Leng peak,"The service was excellent, will visit again.",2.9,2022-07-17 17:15:36
+User_33,Van Thanh Temple,Beautiful scenery and very peaceful.,2.2,2023-07-21 03:32:22
+User_69,Ba Na Hills,Family-friendly and enjoyable for all ages.,3.9,2023-09-19 06:25:08
+User_10,Cam Son Lake,Family-friendly and enjoyable for all ages.,3.3,2022-07-07 17:17:22
+User_28,Cu Lao Xanh,"A hidden gem, truly spectacular.",1.2,2024-05-18 21:26:59
+User_32,My Son Sanctuary,Perfect for a weekend getaway!,2.7,2023-09-21 23:30:48
+User_63,Xuan Thuy National Park,Beautiful scenery and very peaceful.,2.8,2023-06-25 09:49:31
+User_19,Qinghai Water Puppet Village,Family-friendly and enjoyable for all ages.,1.0,2023-07-03 14:06:20
+User_66,Xeo Quyt relic site,"Good, but could be better maintained.",4.8,2024-05-22 17:38:40
+User_55,Ancient Mango Tree,Beautiful scenery and very peaceful.,3.4,2024-05-17 00:05:29
+User_62,Ho Mai Mieu,"An average experience, needs improvement.",2.6,2022-09-06 20:41:03
+User_7,Giang Dien Waterfall,Too expensive for what it offers.,4.7,2024-06-27 18:06:49
+User_69,Thuong Temple,Beautiful scenery and very peaceful.,3.4,2022-04-11 06:09:42
+User_83,Hoi An ancient town,"The service was excellent, will visit again.",1.4,2023-03-12 17:35:53
+User_53,Modal Verbs,Perfect for a weekend getaway!,1.5,2023-08-09 23:17:25
+User_29,Thai Duong Clock,"Not as expected, quite crowded.",3.9,2022-09-23 08:51:09
+User_93,Vi O Lach Pass,"Highly overrated, not worth the hype.",4.1,2023-05-02 20:27:37
+User_51,Dinh Mountain Vung Tau,Perfect for a weekend getaway!,3.8,2022-03-14 20:50:31
+User_70,Ponagar Tower,"Not as expected, quite crowded.",5.0,2022-01-13 07:31:58
+User_36,Vinh Sang tourist area,"Highly overrated, not worth the hype.",3.2,2022-10-03 08:30:14
+User_47,Po Klong Garai Tower,"The view was breathtaking, loved it.",2.9,2023-12-16 12:04:16
+User_12,Nga Nam floating market,Too expensive for what it offers.,4.0,2024-06-14 22:55:15
+User_82,Da Nhay Beach,"Not as expected, quite crowded.",2.9,2022-07-28 03:00:25
+User_27,Ba Dong Beach,"Highly overrated, not worth the hype.",4.0,2022-05-18 05:41:35
+User_59,Tan An Night Market,"The service was excellent, will visit again.",1.4,2024-08-11 11:02:51
+User_67,Ha Long Park,"Not as expected, quite crowded.",1.6,2023-04-18 07:52:26
+User_88,Muong Than fields,Too expensive for what it offers.,4.7,2024-04-14 15:03:09
+User_26,My Lam mineral spring,"A hidden gem, truly spectacular.",3.1,2023-12-06 16:20:53
+User_77,Love Falls,"Not as expected, quite crowded.",4.2,2023-06-17 02:46:43
+User_31,Vu Dai Village,Beautiful scenery and very peaceful.,4.1,2022-01-25 14:44:44
+User_76,Da Nhay Beach,"Good, but could be better maintained.",2.6,2022-08-17 19:34:56
+User_86,Hon Yen,"Highly overrated, not worth the hype.",2.0,2023-05-19 17:55:35
+User_11,Tan Long stork garden,"Good, but could be better maintained.",4.0,2023-03-28 11:49:55
+User_27,Lau Pagoda,"An average experience, needs improvement.",1.2,2023-12-28 04:13:08
+User_100,Ton Thanh Pagoda,Too expensive for what it offers.,1.4,2022-06-12 02:27:20
+User_24,Fansipan Mountain Peak,"The view was breathtaking, loved it.",1.1,2023-04-21 20:46:59
+User_98,Mai Chau,"Highly overrated, not worth the hype.",4.6,2022-05-06 15:26:39
+User_16,Tam Chuc Pagoda,"An average experience, needs improvement.",4.1,2022-09-11 21:54:34
+User_34,Tran Temple,"The service was excellent, will visit again.",3.8,2024-11-14 09:49:41
+User_88,Ponagar Tower,"An average experience, needs improvement.",1.7,2024-08-20 00:51:49
+User_15,Dai Yem Waterfall,"The service was excellent, will visit again.",3.7,2024-09-12 02:01:03
+User_89,Thac Ba Lake,"Good, but could be better maintained.",3.8,2022-07-20 11:42:12
+User_63,Ba Ra Mountain,"Rich in history and culture, a must-visit.",2.9,2023-01-04 11:18:18
+User_51,Khmer Cultural Museum,"The service was excellent, will visit again.",2.2,2022-02-18 20:03:56
+User_4,Phu Quoc Island,Beautiful scenery and very peaceful.,4.4,2024-04-27 23:37:47
+User_81,Tuyen Linh Pagoda,Family-friendly and enjoyable for all ages.,4.3,2022-04-19 05:13:30
+User_36,Hoang Van Thu Bridge,"A hidden gem, truly spectacular.",2.0,2022-11-27 09:00:23
+User_95,Ben Thanh Market,"Not as expected, quite crowded.",2.6,2023-08-12 14:12:08
+User_50,Thien An Mountain,"Rich in history and culture, a must-visit.",3.5,2022-07-18 18:57:06
+User_62,Hoi mat weaving village,"Highly overrated, not worth the hype.",1.8,2022-06-08 02:13:07
+User_71,Cao Lanh Market,Perfect for a weekend getaway!,3.8,2023-06-14 06:39:10
+User_66,Xuan Thuy National Park,"Not as expected, quite crowded.",4.0,2022-01-14 19:03:12
+User_27,Nine waterfalls Tu Son,Perfect for a weekend getaway!,1.5,2023-06-01 14:44:00
+User_71,But Thap Pagoda,"Good, but could be better maintained.",4.4,2023-04-03 03:45:46
+User_73,Chay River,Family-friendly and enjoyable for all ages.,1.4,2024-02-17 03:33:54
+User_82,Hue Citadel,"A hidden gem, truly spectacular.",1.2,2024-04-03 15:07:07
+User_98,Cam Son Lake,Perfect for a weekend getaway!,2.7,2023-05-27 02:14:10
+User_65,Ponagar Tower,Family-friendly and enjoyable for all ages.,1.9,2023-03-23 02:25:52
+User_95,Phu Nhai Church,Beautiful scenery and very peaceful.,3.6,2023-06-18 11:05:23
+User_64,U Minh Ha National Park,"Highly overrated, not worth the hype.",3.5,2022-07-26 02:52:12
+User_95,Tam Dao,"The view was breathtaking, loved it.",3.0,2022-09-11 17:43:05
+User_43,Con Phung tourist area,Beautiful scenery and very peaceful.,3.4,2022-01-28 01:46:28
+User_36,Vinpearl Hau Giang amusement park,"Not as expected, quite crowded.",4.9,2022-01-12 11:29:14
+User_60,Lung Cu flagpole,Perfect for a weekend getaway!,1.9,2023-09-21 04:32:51
+User_70,Temple of Literature - National Tu Giam,"Not as expected, quite crowded.",4.7,2024-07-02 04:39:17
+User_1,Tonle Sap Lake,"An average experience, needs improvement.",4.0,2022-08-17 19:51:19
+User_13,Thum Thum Waterfall,"Not as expected, quite crowded.",2.2,2022-07-28 19:04:54
+User_11,Suoi Giang,"An average experience, needs improvement.",1.4,2022-02-04 18:48:30
+User_92,Heaven's Gate O Quy Ho,Too expensive for what it offers.,1.8,2024-02-03 06:13:34
+User_58,Ho Mai Mieu,Family-friendly and enjoyable for all ages.,2.3,2022-07-03 12:33:05
+User_60,Magic Eye Mountain,"Highly overrated, not worth the hype.",1.6,2022-07-14 16:44:04
+User_90,Nguom Ngao Cave,"An average experience, needs improvement.",3.4,2024-06-17 22:26:55
+User_7,Cam Son Lake,"Rich in history and culture, a must-visit.",1.5,2024-09-25 18:03:28
+User_77,Tra Su Melaleuca Forest,Family-friendly and enjoyable for all ages.,3.1,2024-12-14 15:58:49
+User_27,Hundred Pillar Ancient House,"Highly overrated, not worth the hype.",5.0,2022-05-22 04:43:00
+User_55,Dong Ho painting village,"The view was breathtaking, loved it.",4.6,2024-09-04 05:30:08
+User_57,Thuong Temple,Beautiful scenery and very peaceful.,3.4,2022-08-07 09:35:39
+User_66,Lak Lake,"The service was excellent, will visit again.",1.6,2024-11-03 21:33:07
+User_12,Po Klong Garai Tower,Beautiful scenery and very peaceful.,2.3,2023-08-11 04:19:13
+User_1,Xeo Quyt relic site,"The view was breathtaking, loved it.",1.4,2022-04-10 06:51:58
+User_16,Phu Cuong Waterfall,"The view was breathtaking, loved it.",4.6,2022-12-17 05:37:48
+User_81,Vieng Market,Beautiful scenery and very peaceful.,1.7,2022-12-04 14:31:46
+User_52,Vu Dai Village,"A hidden gem, truly spectacular.",3.1,2022-01-05 21:38:39
+User_14,Khmer Cultural Museum,Perfect for a weekend getaway!,2.4,2023-04-24 00:13:06
+User_83,Chien Dan Tower,"The service was excellent, will visit again.",2.5,2022-06-18 17:43:35
+User_99,Fairy Cave,"The view was breathtaking, loved it.",2.5,2022-12-21 10:09:53
+User_52,Ke Ga Lighthouse,"Highly overrated, not worth the hype.",4.5,2023-08-22 21:01:53
+User_72,Binh Phuoc cashew craft village,Family-friendly and enjoyable for all ages.,4.5,2024-11-20 02:34:40
+User_6,Great Solidarity Square,Too expensive for what it offers.,2.8,2024-09-06 07:08:21
+User_36,Long Bien Bridge,"A hidden gem, truly spectacular.",2.4,2024-03-10 16:08:13
+User_9,Tomb of Khai Dinh,"Highly overrated, not worth the hype.",1.6,2024-01-15 04:35:16
+User_47,Chay River,"A hidden gem, truly spectacular.",1.4,2024-11-01 17:05:39
+User_68,Binh Duong New City Park,Family-friendly and enjoyable for all ages.,4.3,2022-01-08 21:13:00
+User_100,Nui Chua National Park,"Not as expected, quite crowded.",2.8,2023-02-03 20:07:15
+User_28,Sin Ho market,"Rich in history and culture, a must-visit.",1.3,2023-06-04 10:24:43
+User_73,Trang An,Beautiful scenery and very peaceful.,3.2,2024-09-05 05:38:59
+User_32,Vam Ray Pagoda,"An average experience, needs improvement.",2.6,2022-12-28 20:18:56
+User_68,Bat Pagoda,Too expensive for what it offers.,3.7,2023-06-22 04:06:56
+User_63,Suoi Oh,"Rich in history and culture, a must-visit.",4.5,2022-10-22 21:42:10
+User_27,Ke Ga Lighthouse,"A hidden gem, truly spectacular.",5.0,2024-08-13 14:57:49
+User_100,My Khe Beach,"Good, but could be better maintained.",3.3,2022-02-25 20:57:56
+User_5,Ta Xua peak,"Rich in history and culture, a must-visit.",2.7,2024-09-10 03:33:32
+User_82,Mu Cang Chai terraced fields,"The view was breathtaking, loved it.",4.1,2024-04-18 18:17:49
+User_11,Bong Lau Pass,Too expensive for what it offers.,2.8,2023-12-22 10:11:34
+User_67,Hon Yen,Family-friendly and enjoyable for all ages.,1.8,2022-09-15 16:27:53
+User_33,Dai Nam tourist area,"An average experience, needs improvement.",4.8,2024-09-02 07:45:33
+User_47,Con Son,"An average experience, needs improvement.",1.0,2023-07-14 04:34:41
+User_57,Ngoc Linh Peak,"Rich in history and culture, a must-visit.",1.4,2022-04-05 01:32:30
+User_22,Binh Duong New City Park,"The view was breathtaking, loved it.",2.9,2022-03-02 08:41:47
+User_58,Tan Long stork garden,"Not as expected, quite crowded.",1.5,2023-09-10 18:27:40
+User_37,Moc Chau,Perfect for a weekend getaway!,3.2,2023-12-26 12:25:53
+User_93,Pine forest in Ang village,Beautiful scenery and very peaceful.,3.1,2024-11-21 12:21:28
+User_8,Cu Lao Xanh,"The service was excellent, will visit again.",2.0,2023-12-17 03:07:36
+User_24,Tan Long stork garden,"Good, but could be better maintained.",1.1,2022-06-03 15:20:49
+User_54,Suoi Hieu,"Rich in history and culture, a must-visit.",1.2,2024-06-09 18:51:21
+User_79,Tra Su Melaleuca Forest,"The service was excellent, will visit again.",1.2,2024-08-25 19:26:20
+User_81,Nui Chua National Park,Perfect for a weekend getaway!,1.5,2024-09-27 03:09:36
+User_83,Lai Chau Hydroelectric Lake,"Highly overrated, not worth the hype.",1.3,2023-09-26 22:10:59
+User_67,Vietnam History Museum,Family-friendly and enjoyable for all ages.,2.5,2023-12-13 18:33:58
+User_14,Trang An,Family-friendly and enjoyable for all ages.,1.6,2024-09-26 23:42:38
+User_43,Great Solidarity Square,"Not as expected, quite crowded.",1.3,2023-02-24 04:50:26
+User_76,Tien Chau Pagoda,"The view was breathtaking, loved it.",4.5,2022-01-21 07:08:57
+User_15,Suoi Hieu,"An average experience, needs improvement.",1.7,2024-08-05 13:39:29
+User_77,Magic Eye Mountain,"Not as expected, quite crowded.",2.3,2024-04-11 00:22:52
+User_88,Ban Gioc Waterfall,"The service was excellent, will visit again.",1.6,2023-05-06 11:53:18
+User_41,Tam Coc,"An average experience, needs improvement.",2.0,2024-03-28 06:47:45
+User_48,Dau Tieng Lake,"The service was excellent, will visit again.",2.2,2024-04-13 00:16:42
+User_87,Ninh Thuan vineyard,Too expensive for what it offers.,3.4,2023-03-27 11:18:09
+User_42,Huu Nghi border gate,"Rich in history and culture, a must-visit.",1.2,2022-02-25 17:30:23
+User_99,Ben Nghieng - Wharf K15,"The service was excellent, will visit again.",4.2,2023-01-17 03:23:04
+User_35,Dragon Bridge,"Good, but could be better maintained.",2.6,2022-06-18 22:41:19
+User_12,Vam Co River,"The view was breathtaking, loved it.",1.5,2023-09-13 15:33:52
+User_20,Vinpearl Hau Giang amusement park,"Rich in history and culture, a must-visit.",3.4,2022-07-25 10:27:38
+User_50,Hon Dau Lighthouse,Beautiful scenery and very peaceful.,4.7,2024-05-16 14:09:48
+User_15,Triem Duc hot spring,"Not as expected, quite crowded.",4.2,2023-09-13 11:14:00
+User_32,Cam Thuy God Fish Stream,Family-friendly and enjoyable for all ages.,2.2,2022-11-14 15:24:34
+User_51,Fansipan Mountain Peak,"Good, but could be better maintained.",1.9,2023-11-21 13:30:01
+User_51,Xuan Huong Lake,Family-friendly and enjoyable for all ages.,3.1,2023-08-18 06:31:29
+User_69,Silver Stone Cave,"A hidden gem, truly spectacular.",3.3,2023-07-06 01:04:54
+User_93,Heaven's Gate O Quy Ho,"Rich in history and culture, a must-visit.",4.4,2022-09-23 13:15:33
+User_17,Holy See Church,Perfect for a weekend getaway!,2.6,2024-12-27 08:11:01
+User_86,Dray Sap Waterfall,Beautiful scenery and very peaceful.,3.7,2023-10-23 20:07:45
+User_62,Lake Be Beach,"Highly overrated, not worth the hype.",2.1,2022-02-13 12:22:06
+User_10,Hundred Pillar Ancient House,"Not as expected, quite crowded.",1.9,2022-06-26 02:30:42
+User_65,O Quy Ho Pass,"Not as expected, quite crowded.",2.5,2022-12-14 11:44:05
+User_41,Khuoi Nhi Waterfall,Family-friendly and enjoyable for all ages.,2.1,2023-08-25 11:50:27
+User_30,Cai Be Church,"Rich in history and culture, a must-visit.",3.8,2022-04-23 06:10:39
+User_14,Kon Tum Wooden Church,Family-friendly and enjoyable for all ages.,4.2,2022-03-19 22:25:32
+User_12,Bat Pagoda,"A hidden gem, truly spectacular.",2.7,2023-05-09 12:39:47
+User_15,Kon Klor Suspension Bridge,Too expensive for what it offers.,2.3,2023-02-17 06:45:17
+User_39,Chau Thoi Pagoda,Family-friendly and enjoyable for all ages.,4.7,2024-07-28 20:10:22
+User_90,Cu Vo Peak,"Rich in history and culture, a must-visit.",3.6,2023-10-24 21:05:17
+User_31,Dak To Waterfall,Family-friendly and enjoyable for all ages.,2.8,2022-10-06 02:58:02
+User_70,But Thap Pagoda,"Highly overrated, not worth the hype.",2.0,2023-10-01 04:44:20
+User_56,Som Rong Pagoda,"The view was breathtaking, loved it.",1.7,2023-07-15 03:07:03
+User_36,Xuan Huong Lake,"An average experience, needs improvement.",2.2,2024-11-24 07:50:46
+User_98,Ancient Mango Tree,Too expensive for what it offers.,3.2,2024-11-27 19:20:53
+User_65,Heaven's Gate O Quy Ho,"The view was breathtaking, loved it.",2.2,2022-02-10 19:01:58
+User_99,Thien An Mountain,"The view was breathtaking, loved it.",3.1,2024-11-07 05:23:44
+User_24,Ben Nghieng - Wharf K15,"Good, but could be better maintained.",2.1,2024-03-18 15:41:58
+User_65,Bo Da ancient pagoda,Perfect for a weekend getaway!,3.5,2024-07-14 22:57:57
+User_23,FLC Vinh Thinh tourist area,"Good, but could be better maintained.",3.5,2024-05-12 10:25:21
+User_28,Poshanu Cham Tower,"The service was excellent, will visit again.",2.1,2022-09-02 12:18:38
+User_98,Muong Thanh fields,"Rich in history and culture, a must-visit.",4.5,2024-09-06 12:48:21
+User_85,Binh Phuoc cashew craft village,"A hidden gem, truly spectacular.",1.1,2024-05-17 12:08:20
+User_41,Ban Gioc Waterfall,"Not as expected, quite crowded.",2.8,2024-07-28 04:54:05
+User_12,Bridge of Love,Beautiful scenery and very peaceful.,4.6,2023-04-08 08:46:22
+User_5,Truong Son National Martyrs Cemetery,Perfect for a weekend getaway!,3.2,2022-07-07 11:59:22
+User_29,Elephant Falls,"Highly overrated, not worth the hype.",1.5,2023-07-25 08:29:41
+User_67,My Lam mineral spring,Beautiful scenery and very peaceful.,3.2,2022-04-25 05:06:01
+User_37,Bai Chay Beach,"Good, but could be better maintained.",4.1,2024-03-23 23:08:45
+User_86,Thanh Chuong tea hill,Family-friendly and enjoyable for all ages.,3.8,2023-11-21 02:09:25
+User_31,Cat Ba,Too expensive for what it offers.,3.6,2022-12-17 06:18:54
+User_18,Vieng Market,"Rich in history and culture, a must-visit.",4.1,2024-03-03 03:53:03
+User_83,Ton Thanh Pagoda,"A hidden gem, truly spectacular.",4.9,2024-05-24 17:26:25
+User_4,Dak To Waterfall,"Good, but could be better maintained.",1.2,2023-06-28 11:28:58
+User_2,My Khe Beach,"The view was breathtaking, loved it.",2.7,2023-04-01 17:52:19
+User_33,Eagle Island,"A hidden gem, truly spectacular.",4.7,2023-08-22 20:19:24
+User_23,My Khe Beach,Family-friendly and enjoyable for all ages.,2.6,2023-11-19 02:41:52
+User_14,Temple of Literature - National Tu Giam,Too expensive for what it offers.,2.8,2023-11-11 03:10:39
+User_47,Cat King's Palace,"Highly overrated, not worth the hype.",2.9,2022-08-18 07:56:16
+User_51,Dau Tieng Lake,"Good, but could be better maintained.",1.7,2024-10-06 08:13:36
+User_72,Hue Citadel,Too expensive for what it offers.,2.1,2024-04-08 03:16:06
+User_24,Tien Pagoda,Perfect for a weekend getaway!,3.0,2023-09-18 11:35:44
+User_21,Bridge of Love,"The view was breathtaking, loved it.",3.2,2024-07-03 12:07:35
+User_41,Tran Thuong Temple,Beautiful scenery and very peaceful.,3.7,2022-07-13 19:45:55
+User_88,Ba Ngoi garden eco-tourism area,"The view was breathtaking, loved it.",3.0,2023-06-05 18:28:52
+User_32,An Bang Beach,Perfect for a weekend getaway!,3.7,2024-01-25 21:47:10
+User_36,Phu Ung Temple,"The view was breathtaking, loved it.",4.1,2022-09-02 18:17:06
+User_25,Fansipan Mountain Peak,Perfect for a weekend getaway!,2.9,2022-06-11 06:28:01
+User_65,Binh Phuoc cashew craft village,Beautiful scenery and very peaceful.,4.4,2024-02-26 18:16:51
+User_84,Bo Da ancient pagoda,"Highly overrated, not worth the hype.",3.3,2023-01-14 17:48:11
+User_49,Suoi Giang,"Rich in history and culture, a must-visit.",3.6,2023-08-17 06:25:30
+User_65,Heaven's Gate O Quy Ho,"Good, but could be better maintained.",4.2,2022-07-27 04:08:55
+User_34,Cu Lao Xanh,"Good, but could be better maintained.",4.9,2024-08-28 01:41:42
+User_79,Great Solidarity Square,"The service was excellent, will visit again.",5.0,2024-02-27 10:11:21
+User_12,Temple of Holy Mother Lieu Hanh,"The view was breathtaking, loved it.",4.8,2024-12-07 12:36:56
+User_47,Ba Be Lake,"Highly overrated, not worth the hype.",3.8,2023-09-12 10:14:29
+User_5,Tri An Lake,Beautiful scenery and very peaceful.,1.3,2022-06-16 06:29:10
+User_65,Sa Huynh salt field,Beautiful scenery and very peaceful.,1.7,2023-07-02 06:31:05
+User_19,Dai Yem Waterfall,Family-friendly and enjoyable for all ages.,2.4,2024-01-05 01:15:06
+User_22,Sa Huynh salt field,"Not as expected, quite crowded.",3.4,2022-01-08 22:18:21
+User_33,Trung Temple,"The view was breathtaking, loved it.",4.0,2024-05-05 01:32:54
+User_60,Ba Chua Xu Temple,"An average experience, needs improvement.",3.3,2024-12-09 05:07:19
+User_5,Linh Son Cave,"Rich in history and culture, a must-visit.",4.4,2022-04-08 18:46:51
+User_40,Dong Chau Beach,Family-friendly and enjoyable for all ages.,4.3,2022-06-15 06:01:57
+User_22,Lo Go - Xa Mat National Park,"A hidden gem, truly spectacular.",2.5,2023-05-26 08:27:40
+User_49,Love Falls,Family-friendly and enjoyable for all ages.,1.1,2024-06-16 12:46:12
+User_6,Love Falls,"The service was excellent, will visit again.",1.4,2023-05-23 05:41:47
+User_20,Dray Nur Waterfall,Perfect for a weekend getaway!,2.0,2022-07-12 03:49:08
+User_23,Minh Thanh Pagoda,Family-friendly and enjoyable for all ages.,1.2,2022-07-21 08:28:57
+User_97,Chuong Pagoda,Perfect for a weekend getaway!,5.0,2024-04-10 00:01:36
+User_4,Ponagar Tower,"A hidden gem, truly spectacular.",3.8,2024-07-26 18:52:17
+User_41,Sin Ho market,Perfect for a weekend getaway!,1.6,2022-12-25 01:45:00
+User_31,Bien Ky Co,"Good, but could be better maintained.",2.9,2024-04-25 11:47:08
+User_16,Ho Chi Minh Mausoleum,Family-friendly and enjoyable for all ages.,1.4,2022-07-15 03:10:15
+User_47,Ba Be Lake,Beautiful scenery and very peaceful.,4.9,2024-01-12 03:40:53
+User_16,Ko Tam tourist area,Too expensive for what it offers.,1.1,2022-07-14 08:18:30
+User_9,Ba Be Lake,"The view was breathtaking, loved it.",1.7,2024-05-02 10:43:09
+User_3,Ban Gioc Waterfall,"The service was excellent, will visit again.",4.1,2024-08-05 18:08:53
+User_74,U Minh Ha National Park,"The view was breathtaking, loved it.",1.2,2022-01-03 04:34:49
+User_81,Phu Nhai Church,"Not as expected, quite crowded.",1.9,2023-01-12 04:58:22
+User_99,Ho Mai Mieu,"The view was breathtaking, loved it.",2.7,2024-11-23 21:11:02
+User_51,But Thap Pagoda,Too expensive for what it offers.,4.5,2022-02-11 13:40:32
+User_46,Dong Chau Beach,Family-friendly and enjoyable for all ages.,4.9,2022-03-06 09:17:35
+User_97,Ao Ba braised,Beautiful scenery and very peaceful.,3.3,2024-03-03 16:33:08
+User_7,Lake Be Beach,"An average experience, needs improvement.",3.1,2023-02-01 15:07:07
+User_96,My Khe Beach,"The view was breathtaking, loved it.",1.6,2023-06-21 01:22:28
+User_46,Puong Cave,"An average experience, needs improvement.",4.8,2024-10-28 02:17:51
+User_23,Cua Van fishing village,"Rich in history and culture, a must-visit.",1.2,2023-04-25 03:33:50
+User_25,Truong Son National Martyrs Cemetery,Family-friendly and enjoyable for all ages.,3.8,2023-06-21 22:50:32
+User_61,Tan An Night Market,Beautiful scenery and very peaceful.,2.2,2023-06-10 08:35:12
+User_61,Bac Lieu Beach,"A hidden gem, truly spectacular.",4.9,2022-05-12 01:54:43
+User_53,Pho Hien,Beautiful scenery and very peaceful.,4.7,2023-03-28 09:56:16
+User_9,Thien Mu Pagoda,"The service was excellent, will visit again.",4.3,2023-11-24 18:50:42
+User_19,Ngu Dong Ban Ong,Perfect for a weekend getaway!,4.8,2022-07-26 08:17:51
+User_93,Phuc Sen forging village,"The service was excellent, will visit again.",3.2,2022-08-11 18:21:34
+User_98,Tam Chuc Pagoda,"Highly overrated, not worth the hype.",1.3,2023-12-24 08:33:11
+User_58,Pu Ta Leng peak,"Highly overrated, not worth the hype.",4.0,2022-05-27 18:47:15
+User_49,Ho Vi Xuyen,Family-friendly and enjoyable for all ages.,4.4,2024-10-04 04:06:20
+User_75,VinWonders Nha Trang,Family-friendly and enjoyable for all ages.,4.7,2022-12-06 18:56:56
+User_19,Dong Chau Beach,"Good, but could be better maintained.",2.7,2023-12-28 11:26:07
+User_34,Van Thanh Temple,"Highly overrated, not worth the hype.",3.3,2023-10-12 05:10:01
+User_14,Thien Cam Beach,"A hidden gem, truly spectacular.",1.4,2024-02-22 01:29:20
+User_38,But Thap Pagoda,Perfect for a weekend getaway!,2.8,2024-04-07 01:59:02
+User_11,Nam Nung Nature Reserve,Too expensive for what it offers.,3.9,2022-04-14 21:04:21
+User_64,Dai Nam tourist area,Too expensive for what it offers.,2.4,2023-03-09 19:50:16
+User_81,Lim Mong village,Beautiful scenery and very peaceful.,3.9,2024-02-11 21:24:44
+User_69,Hoang Van Thu Bridge,Too expensive for what it offers.,3.6,2024-10-14 03:30:53
+User_51,Thung Nai,"Good, but could be better maintained.",4.5,2022-10-14 15:11:51
+User_72,Sword Lake,"The view was breathtaking, loved it.",2.6,2024-09-17 01:12:28
+User_41,Uncle Ho Temple,Too expensive for what it offers.,1.1,2023-11-16 13:35:52
+User_48,Con Dao Vung Tau,"Rich in history and culture, a must-visit.",5.0,2023-10-17 00:22:17
+User_96,Dinh Mountain Vung Tau,Family-friendly and enjoyable for all ages.,4.1,2023-06-08 15:32:50
+User_48,Nhan Tower,Too expensive for what it offers.,3.6,2024-02-08 04:42:26
+User_97,Thac Ba Lake,"Good, but could be better maintained.",4.3,2022-09-18 11:11:06
+User_85,Vinh Hy Bay,"Not as expected, quite crowded.",4.4,2023-06-17 14:08:40
+User_48,Sword Lake,"Rich in history and culture, a must-visit.",4.3,2022-04-15 20:09:47
+User_85,Cai Lon River,"Rich in history and culture, a must-visit.",3.4,2022-04-28 11:12:05
+User_24,Tri An Lake,Too expensive for what it offers.,1.1,2024-10-27 13:12:06
+User_46,Modal Verbs,"Highly overrated, not worth the hype.",3.6,2024-12-09 08:34:39
+User_3,Tuyen Linh Pagoda,"Not as expected, quite crowded.",4.7,2022-04-12 07:44:52
+User_81,Trung Temple,"The view was breathtaking, loved it.",2.7,2024-04-12 15:22:34
+User_14,Trung Temple,"An average experience, needs improvement.",4.3,2024-02-23 20:16:44
+User_56,Muong Than fields,Too expensive for what it offers.,4.5,2022-03-27 11:22:31
+User_67,Dong Kinh Market,Beautiful scenery and very peaceful.,4.5,2022-06-21 07:01:30
+User_62,Truc Lam Zen Monastery,Beautiful scenery and very peaceful.,2.9,2023-10-16 09:27:03
+User_1,Ba Den Mountain,"An average experience, needs improvement.",1.3,2023-12-05 00:44:50
+User_71,Ho Vi Xuyen,"Good, but could be better maintained.",1.3,2023-03-13 20:11:28
+User_60,Vinpearl Hau Giang amusement park,"Not as expected, quite crowded.",4.3,2023-02-17 23:08:25
+User_48,Nga Nam floating market,Perfect for a weekend getaway!,4.3,2024-10-23 04:01:52
+User_28,Phuc Sen forging village,Beautiful scenery and very peaceful.,3.3,2022-08-25 14:51:14
+User_4,Da Lat Night Market,"The view was breathtaking, loved it.",1.2,2024-08-10 17:52:31
+User_26,Ca Mau Cape,"Rich in history and culture, a must-visit.",3.5,2023-03-18 18:53:53
+User_14,Temple of Holy Mother Lieu Hanh,Perfect for a weekend getaway!,3.7,2024-02-15 11:42:14

@@ -1,0 +1,29 @@
+# templates/recommendations/review_form.html
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Review {{ destination.name }} - TravelRec{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto bg-white rounded-lg shadow-xl p-6">
+    <h1 class="text-2xl font-bold text-gray-900 mb-6">
+        Review {{ destination.name }}
+    </h1>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        
+        <div class="mt-6 flex gap-4">
+            <button type="submit"
+                    class="flex-1 bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
+                Submit Review
+            </button>
+            <a href="{% url 'recommendations:destination_detail' destination.id %}"
+               class="flex-1 bg-gray-200 text-gray-700 py-2 px-4 rounded-md hover:bg-gray-300 text-center">
+                Cancel
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}

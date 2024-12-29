@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Register - TravelRec{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto bg-white rounded-lg shadow-xl p-6">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Register</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        
+        <div class="mt-6">
+            <button type="submit" 
+                    class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700">
+                Register
+            </button>
+        </div>
+        
+        <div class="mt-4 text-center text-sm text-gray-600">
+            Already have an account? 
+            <a href="{% url 'login' %}" class="text-indigo-600 hover:text-indigo-900">
+                Login here
+            </a>
+        </div>
+    </form>
+</div>
+{% endblock %}
