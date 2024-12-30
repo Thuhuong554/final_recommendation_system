@@ -49,6 +49,16 @@ def destination_list(request):
     if category:
         destinations = destinations.filter(categories__name=category)
     
+    # Add bookmark status for each destination
+    if request.user.is_authenticated:
+        bookmarked_destinations = set(UserInteraction.objects.filter(
+            user=request.user,
+            interaction_type='bookmark'
+        ).values_list('destination_id', flat=True))
+        
+        for destination in destinations:
+            destination.is_bookmarked = destination.id in bookmarked_destinations
+    
     return render(request, 'recommendations/destination_list.html', {
         'destinations': destinations,
         'categories': categories,
@@ -104,9 +114,32 @@ def destination_detail(request, destination_id):
         destination=destination,
         interaction_type='bookmark'
     ).exists()
+
+
+    # Get bookmark count
+    bookmark_count = UserInteraction.objects.filter(
+        destination=destination,
+        interaction_type='bookmark'
+    ).count()
+    
+    # Get similar destinations based on bookmarks
+    engine = RecommendationEngine()
+    bookmark_based_recs = engine.get_bookmark_based_recommendations(request.user.id)
+    similar_destinations = []
+    
+    if bookmark_based_recs:
+        similar_ids = [r['destination_id'] for r in bookmark_based_recs[:4]]
+        similar_destinations = Destination.objects.filter(id__in=similar_ids)
+    
+    if not similar_destinations:
+        similar_destinations = (Destination.objects.exclude(id=destination_id)
+                              .filter(categories__in=destination.categories.all())
+                              .distinct()
+                              .order_by('?')[:4])
     
     context = {
         'destination': destination,
+        'bookmark_count': bookmark_count,
         'user_review': user_review,
         'reviews': reviews,
         'similar_destinations': similar_destinations,
@@ -193,7 +226,6 @@ def update_preferences(request):
         'form': form,
         'categories': Category.objects.all()
     })
-
 @login_required
 def get_recommendations(request):
     """API endpoint for getting personalized recommendations"""
@@ -261,17 +293,6 @@ def register(request):
     
     return render(request, 'registration/register.html', {'form': form})
 
-
-
-class UserPreferencesForm(forms.ModelForm):
-    class Meta:
-        model = UserPreferences
-        fields = ['favorite_categories']
-        widgets = {
-            'favorite_categories': forms.CheckboxSelectMultiple(attrs={
-                'class': 'form-checkbox h-4 w-4 text-indigo-600'
-            })
-        }
 
 class LoginView(LoginView):
     template_name = 'registration/login.html'

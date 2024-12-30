@@ -29,28 +29,34 @@
                             <div class="text-2xl font-bold text-indigo-600">{{ destination.rating|floatformat:1 }}</div>
                             <div class="text-sm text-gray-500">Average Rating</div>
                         </div>
-                        <button 
-                            hx-post="{% url 'recommendations:toggle_bookmark' destination.id %}"
-                            hx-swap="outerHTML"
-                            class="p-2 rounded-full hover:bg-gray-100"
-                        >
-                            <svg class="w-6 h-6 {% if is_bookmarked %}text-yellow-400{% else %}text-gray-400{% endif %}" fill="currentColor" viewBox="0 0 20 20">
-                                <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path>
-                            </svg>
-                        </button>
+                        <div class="flex flex-col items-center">
+                            <button 
+                                hx-post="{% url 'recommendations:toggle_bookmark' destination.id %}"
+                                hx-swap="outerHTML"
+                                class="p-2 rounded-full hover:bg-gray-100"
+                            >
+                                <svg class="w-6 h-6 {% if is_bookmarked %}text-yellow-400{% else %}text-gray-400{% endif %}" 
+                                        fill="currentColor" 
+                                        viewBox="0 0 20 20">
+                                    <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z"></path>
+                                </svg>
+                            </button>
+                            <span class="text-sm text-gray-500">{{ bookmark_count }} bookmarks</span>
+                        </div>
+                    </div>
+        
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            {% for category in destination.categories.all %}
+                                <span class="px-3 py-1 rounded-full text-sm bg-indigo-100 text-indigo-800">
+                                    {{ category.name }}
+                                </span>
+                            {% endfor %}
+                        </div>
+        
+                        <p class="mt-4 text-gray-700">{{ destination.description }}</p>
                     </div>
                 </div>
 
-                <div class="mt-4 flex flex-wrap gap-2">
-                    {% for category in destination.categories.all %}
-                        <span class="px-3 py-1 rounded-full text-sm bg-indigo-100 text-indigo-800">
-                            {{ category.name }}
-                        </span>
-                    {% endfor %}
-                </div>
-
-                <p class="mt-4 text-gray-700">{{ destination.description }}</p>
-            </div>
         </div>
 
         <!-- Reviews Section -->
