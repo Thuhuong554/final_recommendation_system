@@ -16,5 +16,7 @@ class UserPreferencesForm(forms.ModelForm):
         model = UserPreferences
         fields = ['favorite_categories']
         widgets = {
-            'favorite_categories': forms.CheckboxSelectMultiple()
+            'favorite_categories': forms.CheckboxSelectMultiple(attrs={
+                'class': 'form-checkbox h-4 w-4 text-indigo-600'
+            })
         }

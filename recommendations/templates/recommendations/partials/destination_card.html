@@ -6,10 +6,10 @@
         {% if user.is_authenticated %}
         <button 
             class="absolute top-4 right-4 p-2 bg-white rounded-full shadow-lg hover:bg-gray-100 transition-colors duration-200"
-            onclick="toggleBookmark({{ destination.id }})">
+            onclick="toggleBookmark({{ destination.id }}, this)">
             <svg xmlns="http://www.w3.org/2000/svg" 
-                 class="h-5 w-5 {% if destination.is_bookmarked %}text-indigo-600{% else %}text-gray-600{% endif %}"
-                 fill="none" 
+                 class="h-5 w-5 bookmark-icon {% if is_bookmarked %}text-yellow-400{% else %}text-gray-400{% endif %}"
+                 fill="currentColor" 
                  viewBox="0 0 24 24" 
                  stroke="currentColor">
                 <path stroke-linecap="round" 
@@ -21,6 +21,7 @@
         {% endif %}
     </div>
     
+    <!-- Rest of the card content remains the same -->
     <div class="p-4">
         <h3 class="text-xl font-semibold text-gray-900 mb-2">
             {{ destination.name }}
@@ -38,7 +39,7 @@
         
         <div class="flex items-center mb-4">
             <div class="flex items-center">
-                <svg class="w-5 h-5 {% if destination.rating >= 4 %}text-yellow-400{% else %}text-gray-400{% endif %}" 
+                <svg class="w-5 h-5 text-yellow-400" 
                      fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                 </svg>
@@ -65,32 +66,30 @@
     </div>
 </div>
 
-{% block extra_js %}
 <script>
-function toggleBookmark(destinationId) {
+function toggleBookmark(destinationId, button) {
+    const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+    
     fetch(`/destination/${destinationId}/bookmark/`, {
         method: 'POST',
         headers: {
-            'X-CSRFToken': '{{ csrf_token }}',
-            'Content-Type': 'application/json'
+            'X-CSRFToken': csrftoken,
+            'X-Requested-With': 'XMLHttpRequest'
         }
     })
     .then(response => response.json())
     .then(data => {
         if (data.status === 'success') {
-            // Update the bookmark icon
-            const button = event.currentTarget;
-            const icon = button.querySelector('svg');
+            const icon = button.querySelector('.bookmark-icon');
             if (data.is_bookmarked) {
-                icon.classList.remove('text-gray-600');
-                icon.classList.add('text-indigo-600');
+                icon.classList.remove('text-gray-400');
+                icon.classList.add('text-yellow-400');
             } else {
-                icon.classList.remove('text-indigo-600');
-                icon.classList.add('text-gray-600');
+                icon.classList.remove('text-yellow-400');
+                icon.classList.add('text-gray-400');
             }
         }
     })
     .catch(error => console.error('Error:', error));
 }
 </script>
-{% endblock %}
