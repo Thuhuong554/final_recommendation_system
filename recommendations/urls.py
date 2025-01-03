@@ -20,6 +20,6 @@ urlpatterns = [
     path('destination/<int:destination_id>/', views.destination_detail, name='destination_detail'),
     path('destination/<int:destination_id>/review/', views.add_review, name='add_review'),
     path('destination/<int:destination_id>/bookmark/', views.toggle_bookmark, name='toggle_bookmark'),
-    path('preferences/', views.update_preferences, name='preferences'),
+    path('preferences/', views.update_preferences, name='update_preferences'),
     path('api/recommendations/', views.get_recommendations, name='get_recommendations'),
 ]

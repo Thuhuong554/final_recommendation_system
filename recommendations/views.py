@@ -207,8 +207,7 @@ def toggle_bookmark(request, destination_id):
     
 @login_required
 def update_preferences(request):
-    """Update user preferences"""
-    # Get or create preferences
+    """Update user preferences."""
     preferences, created = UserPreferences.objects.get_or_create(
         user=request.user
     )
@@ -219,13 +218,16 @@ def update_preferences(request):
             form.save()
             messages.success(request, 'Your preferences have been updated successfully!')
             return redirect('recommendations:home')
+        else:
+            messages.error(request, 'There was an error updating your preferences. Please try again.')
     else:
         form = UserPreferencesForm(instance=preferences)
     
     return render(request, 'recommendations/preferences_form.html', {
         'form': form,
-        'categories': Category.objects.all()
+        'categories': Category.objects.all()  
     })
+
 @login_required
 def get_recommendations(request):
     """API endpoint for getting personalized recommendations"""

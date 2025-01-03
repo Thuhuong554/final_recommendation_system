@@ -3,42 +3,117 @@
 {% block title %}Update Preferences - TravelRec{% endblock %}
 
 {% block content %}
-<div class="min-h-screen bg-gray-50 py-12">
+<div class="min-h-screen bg-gradient-to-br from-indigo-50 to-blue-50 py-12">
     <div class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg">
         <div class="px-8 py-6 border-b border-gray-200">
             <h1 class="text-3xl font-bold text-gray-900">Update Your Preferences</h1>
             <p class="mt-2 text-gray-600">Choose your favorite travel categories to get personalized recommendations</p>
+            <div class="mt-2 flex items-center">
+                <span id="selected-count" class="text-sm text-indigo-600 font-medium"></span>
+            </div>
+            <p id="selected-categories" class="mt-2 text-sm text-gray-800 font-medium"></p>
         </div>
         
-        <form method="post" action="{% url 'recommendations:preferences' %}" class="px-8 py-6">
+        <form method="post" action="{% url 'recommendations:update_preferences' %}" class="px-8 py-6">
             {% csrf_token %}
             
             <div class="space-y-6">
                 <div>
                     <label class="text-lg font-medium text-gray-900 block mb-4">Favorite Categories</label>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        {{ form.favorite_categories }}
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {% for value, label in form.favorite_categories.field.choices %}
+                        <label class="category-item relative flex items-center p-4 cursor-pointer rounded-lg border-2
+                                    border-gray-300 transition-all duration-200 group">
+                            <!-- Hidden Checkbox -->
+                            <input type="checkbox" 
+                                   name="favorite_categories" 
+                                   value="{{ value }}" 
+                                   {% if value in form.favorite_categories.value %}checked{% endif %}
+                                   class="absolute opacity-0 peer"
+                                   onchange="updateSelectedCategories()">
+                            <!-- Label for the category -->
+                            <span class="text-gray-900 font-medium transition-all px-4 py-2 rounded-lg">
+                                {{ label }}
+                            </span>
+                        </label>
+                        {% endfor %}
                     </div>
                 </div>
                 
                 {% if form.favorite_categories.errors %}
                 <div class="rounded-md bg-red-50 p-4">
-                    <div class="flex">
-                        <div class="text-sm text-red-700">
-                            {{ form.favorite_categories.errors }}
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                            </svg>
+                        </div>
+                        <div class="ml-3">
+                            <div class="text-sm text-red-700">
+                                {{ form.favorite_categories.errors }}
+                            </div>
                         </div>
                     </div>
                 </div>
                 {% endif %}
             </div>
             
-            <div class="mt-8">
+            <div class="mt-8 space-y-4">
                 <button type="submit" 
-                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm 
+                               text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 
+                               focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                               transition-colors duration-200">
                     Save Preferences
                 </button>
+                <a href="{% url 'recommendations:home' %}" 
+                   class="w-full flex justify-center py-3 px-4 border border-gray-300 rounded-md shadow-sm 
+                          text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 
+                          focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                          transition-colors duration-200">
+                    Cancel
+                </a>
             </div>
         </form>
     </div>
 </div>
+
+<style>
+    .category-item {
+        background-color: white;
+        border-color: gray;
+    }
+
+    .category-item:hover {
+        background-color: #f0f0f0; /* Màu nền khi hover */
+    }
+
+    .category-item input:checked + span {
+        background-color: #e0f2ff; 
+        border-color: #2563eb;    
+        color: #2563eb;           
+        font-weight: bold;        
+    }
+
+    .category-item input:not(:checked) + span {
+        background-color: white; 
+        color: black;            
+        font-weight: normal;     
+    }
+</style>
+
+<script>
+    function updateSelectedCategories() {
+        const selected = Array.from(document.querySelectorAll('input[name="favorite_categories"]:checked'))
+                              .map(el => el.parentElement.querySelector('span').innerText);
+        const selectedCount = selected.length;
+        const countElement = document.getElementById('selected-count');
+        const categoriesElement = document.getElementById('selected-categories');
+        countElement.textContent = `${selectedCount} categories selected`;
+        categoriesElement.textContent = `Selected Categories: ${selected.join(', ')}`;
+    }
+    
+    // Initialize count on page load
+    document.addEventListener('DOMContentLoaded', updateSelectedCategories);
+</script>
 {% endblock %}
